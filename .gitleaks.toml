@@ -1,0 +1,7 @@
+# Planted, fake values used on purpose by the secret-handling tests (scenarios/tool-tests/08_secret.json).
+[extend]
+useDefault = true
+
+[allowlist]
+description = "synthetic planted test values"
+regexes = ['''PLANTED-(SECRET|CODE)-[0-9a-f]{4}-do-not-use''']

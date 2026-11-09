@@ -11,7 +11,7 @@
 | `eval/golden/abp-vectors.json` (54 vectors) | `abp/golden/` | Python `eval/abpeval/abp.py` and Kotlin `AbpChecks.kt` pass them today; a Swift port must too |
 | `ChatModel.BASE_SYSTEM`, the grounded-preset block | `prompts/` | first copy: `prompts/base-system.riskmandate.json` |
 | `ToolProtocol.kt` text tool-call protocol and limits | `prompts/tool-protocol.json` + `bridge/conformance/` | |
-| the Workbench brief's ~20 tool-test cases (not written yet) | `scenarios/tool-tests/` | written here first, so both apps start from them |
+| dev.lab's tool-test cases (`abp-tooltest/1`, 9 kinds) and the judge prompt (`abp-judge-prompt/1`) | `scenarios/tool-tests/`, `prompts/judges/` | **moved** 9 Nov from Android work/dev.lab c8ccb63; dev.lab owns the format |
 | `eval/models.json` | `scenarios/models.json` | add on-device entries (Gemma 4 E2B/E4B litertlm, Apple FM) |
 | `assets/feature_site/*.html` | stays per app for now | the bundled riskmandate.ai copy; shareable once iOS RiskMandate shows it |
 
