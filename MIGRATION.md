@@ -9,7 +9,7 @@
 | `app/src/main/assets/feature_lab/graph/sample-graph.json` | `scenarios/graphs/` | |
 | `app/src/main/assets/feature_lab/recordings/**` | `scenarios/recordings/` | |
 | `eval/golden/abp-vectors.json` (54 vectors) | `abp/golden/` | **moved** 9 Nov (dev 73d585e). Python `eval/abpeval/abp.py` and Kotlin `AbpChecks.kt` pass them; a Swift port must too |
-| `ChatModel.BASE_SYSTEM` / `assets/prompts/riskmandate_base.v1.txt`, the grounding texts `res/raw/feature_chat_*.txt` | `prompts/` | **moved** 9 Nov (dev 73d585e): `riskmandate_base.v1.txt` (identical to `base-system.riskmandate.json`'s text), `grounding/`. v2 (no on-device claim, for cloud requests) follows once it is on Android dev |
+| `ChatModel.BASE_SYSTEM` / `assets/prompts/riskmandate_base.v1.txt`, the grounding texts `res/raw/feature_chat_*.txt` | `prompts/` | **moved** 9 Nov (dev 73d585e): `riskmandate_base.v1.txt` (identical to `base-system.riskmandate.json`'s text), `grounding/`. `riskmandate_base.v2.txt` (no on-device claim, for `cloud.*` requests; dev 9b24fed) |
 | `ToolProtocol.kt` text tool-call protocol and limits | `prompts/tool-protocol.json` + `bridge/conformance/` | |
 | dev.lab's tool-test cases (`abp-tooltest/1`, 9 kinds) and the judge prompt (`abp-judge-prompt/1`) | `scenarios/tool-tests/`, `prompts/judges/` | **moved** 9 Nov from Android work/dev.lab c8ccb63; dev.lab owns the format |
 | `eval/models.json` | `scenarios/models.json` | add on-device entries (Gemma 4 E2B/E4B litertlm, Apple FM) |
