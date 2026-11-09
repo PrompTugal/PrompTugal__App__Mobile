@@ -41,3 +41,17 @@ JavaScript UI over the air only for the staff apps (team, RiskMandate), never th
 ## Where things come from today
 
 See `MIGRATION.md`.
+
+## Where mobile@ stopped (9 Nov 2026, about 23:40 UTC, at the stop relayed from Dinis)
+
+- **On dev:** the layout, bridge v1 (`llm.*` and `cloud.*` kept apart), the manifest, prompts (base v1 and v2,
+  grounding texts, the judge prompt), dev.lab's 13 tool-test kinds, the 54 ABP golden vectors, the eval formats,
+  `formats/` (schedule rules with a JS reference and shared vectors; slots for toggles, where-is-everybody,
+  device keys, key exchange), the migration map and the first "what each app learnt" note.
+- **Not done:** `bridge/js/pt-bridge.js` and `bridge/conformance/`; `ui/`; the Swift ABP port (owner: the iOS
+  conductor on account B, for M-iPad); the schemas for toggles, where-is-everybody and keys; the signed run-time
+  content manifest; the daily "learnt" note after 9 Nov.
+- **Open asks for Dinis:** push access to this repo for dev.lab.android; the Ed25519 content-signing key when the
+  run-time delivery step comes.
+- **Routes:** conductor.android pushes to `work/conductor.android`; dev.lab syncs via mobile@ until it has access;
+  iOS material goes through conductor@web-summit into the iOS repo's `briefs/`.
