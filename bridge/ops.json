@@ -1,0 +1,57 @@
+{
+ "format": "mobile-bridge-ops/1",
+ "bridge": 1,
+ "spec": "BRIDGE.md",
+ "ops": [
+  "app.info",
+  "llm.models",
+  "llm.count",
+  "llm.generate",
+  "llm.stream",
+  "llm.cancel",
+  "llm.tools",
+  "cloud.models",
+  "cloud.count",
+  "cloud.generate",
+  "cloud.stream",
+  "cloud.cancel",
+  "tool.run",
+  "abp.check",
+  "abp.final",
+  "vault.read",
+  "vault.list",
+  "store.get",
+  "store.put",
+  "device.stats",
+  "results.export"
+ ],
+ "legacy_ios_ptweb": [
+  "schedule.get",
+  "schedule.set",
+  "identity.get",
+  "notify.plan",
+  "meter.topup"
+ ],
+ "events": [
+  "llm.token",
+  "llm.tool_call",
+  "llm.done",
+  "llm.error",
+  "cloud.token",
+  "cloud.tool_call",
+  "cloud.done",
+  "cloud.error"
+ ],
+ "errors": [
+  "unknown_op",
+  "bad_args",
+  "not_allowed",
+  "no_model",
+  "too_long",
+  "load_failed",
+  "inference_failed",
+  "cancelled",
+  "timeout",
+  "internal"
+ ]
+}

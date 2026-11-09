@@ -1,0 +1,77 @@
+{
+ "format": "mobile-manifest/1",
+ "version": "0.0.1-draft",
+ "bridge_min": 1,
+ "apps": {
+  "riskmandate": {
+   "android": "ai.riskmandate.app",
+   "ios": "ai.riskmandate.app"
+  },
+  "team": {
+   "ios": "news.promptugal.team"
+  },
+  "promptugal": {
+   "ios": "news.promptugal.reader",
+   "llm": false,
+   "note": "App Store news app: no LLM until Dinis says"
+  }
+ },
+ "features": [
+  {
+   "id": "workbench",
+   "apps": [
+    "riskmandate",
+    "team"
+   ],
+   "bridge_min": 1,
+   "ui": "ui/workbench/index.html",
+   "ops": [
+    "app.info",
+    "llm.models",
+    "llm.count",
+    "llm.generate",
+    "llm.stream",
+    "llm.cancel",
+    "llm.tools",
+    "tool.run",
+    "abp.check",
+    "abp.final",
+    "store.get",
+    "store.put",
+    "device.stats",
+    "results.export"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "request-builder",
+   "apps": [
+    "riskmandate",
+    "team"
+   ],
+   "bridge_min": 1,
+   "ui": "ui/request-builder/index.html",
+   "ops": [
+    "app.info",
+    "llm.models",
+    "llm.count",
+    "llm.stream",
+    "llm.cancel",
+    "vault.read",
+    "vault.list"
+   ],
+   "enabled": false
+  },
+  {
+   "id": "chat",
+   "apps": [
+    "riskmandate",
+    "team"
+   ],
+   "native": true,
+   "prompts": [
+    "prompts/base-system.riskmandate.json"
+   ]
+  }
+ ]
+}
